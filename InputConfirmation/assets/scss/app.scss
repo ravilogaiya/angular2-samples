@@ -1,0 +1,34 @@
+body {
+  padding: 32px;
+  margin: 32px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+	padding: 16px;
+	border: 1px solid #ccc;
+	background: #eee;
+	margin-border: 32px;
+}
+
+button {
+	padding: 4px 8px;
+	border: 1px soolid #ccc;
+	background-color: white;
+	border-radius: 3px;
+	cursor: default;
+}
+
+button:not([disabled]) {
+	color: pointer;
+}
+
+button:not([disabled]):hover {
+	background-color: salmon;
+	color: white;
+}
+
+.highlight {
+	font-weight: bold;
+}

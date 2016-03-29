@@ -1,0 +1,110 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  background-color: #ccc;
+  padding: 32px;
+  font-size: 22px;
+
+  nav {
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  nav.left {
+    width: calc(60% - 32px);
+    text-align: left;
+  }
+
+  nav.right {
+    width: calc(40% - 32px);
+    text-align: right;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      padding: 0 10px;
+
+      a {
+        text-decoration: none;
+        color: #364f87;
+        cursor: pointer;
+      }
+
+      a:hover,
+      a:active,
+      .router-link-active {
+        border-bottom: 2px solid #364f87;
+        padding-bottom: 4px;
+        font-weight: bold;
+      }
+    }
+
+    li:first-child {
+      padding-left: 0;
+    }
+
+    li:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.main {
+  margin: 32px;
+}
+
+form {
+  .input-group {
+    label {
+      display: block;
+    }
+
+    input {
+      font-size: inherit;
+      border-radius: 3px;
+      background-color: white;
+      outline: none;
+      border: 1px solid black;
+    }
+  }
+
+  button {
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-top: 10px;
+    font-size: inherit;
+    background-color: #385f9f;
+    color: white;
+    cursor: pointer;
+    padding: 5px 8px;
+  }
+
+  button[disabled] {
+    background-color: #ccc;
+    cursor: default;
+  }
+
+  button:not([disabled]):hover {
+    background-color: #3c75ba;
+  }
+
+  .ng-dirty.ng-invalid {
+    border: 1px solid red;
+  }
+
+  .ng-dirty.ng-valid {
+    border: 1px solid green;
+    background-color: #b7e0a0;
+  ;
+  }
+}

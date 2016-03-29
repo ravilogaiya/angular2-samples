@@ -1,0 +1,94 @@
+$mainColor: #1351af;
+$width: 60%;
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+}
+
+header {
+	background-color: $mainColor;
+	padding: 16px 0;
+}
+
+header .brand {
+	width: $width;
+	margin: auto;
+	color: white;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.main {
+	width: $width;
+	margin: 32px auto;
+	padding: 16px;
+  	border: 1px solid #ddd;
+  	background-color: #eee;
+}
+
+.input {
+	margin-bottom: 8px;
+	display: inline-block;
+}
+
+.input input,
+.input label {
+	font-size: inherit;
+	display: block;
+}
+
+button {
+	font-size: inherit;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	vursor: pointer;
+}
+
+button:hover {
+	background-color: #ccc;
+}
+
+button.danger {
+	background-color: #ff3a3d;
+	color: white;
+	border: 1px solid red;
+}
+
+button.danger:hover {
+	background-color: #b8282a;
+	border: 1px solid red;
+}
+
+section {
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid black;
+}
+
+section:last-of-type {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#item-amt {
+	width: 55px;
+	text-align: center;
+}
+
+ul {
+	margin: 0;
+}
+
+ul li {
+	cursor: pointer;
+}
+
+ul li:hover {
+	color: blue;
+	font-weight: bold;
+}
